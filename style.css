@@ -1,0 +1,187 @@
+body {
+    background-image: url("./images/bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(1.2rem, 1.25vw, 1.3rem);
+    padding: 0;
+    margin: 30px;
+    justify-content: center;
+
+
+}
+
+.imagem img {
+    margin-bottom: 5em;
+    margin-top: 5em;
+}
+
+.geral {
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-width: 675px;
+    justify-content: center;
+
+}
+
+h1, p {
+
+    margin-left: 30px;
+}
+
+
+.botao {
+    width: 200px;
+    height: 45px;
+    margin-left: 30px;
+    background-color: #ffffff;
+    color: hsl(288, 37%, 43%);
+    border-radius: 22px;
+    font-size: 1em;
+    padding: 0.3em 0.8em;
+    border: 0;
+    box-shadow: 3px 5px 13px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: hsl(300, 69%, 71%);
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+    color: #ffffff;
+}
+
+
+
+
+footer {
+    color: #ffffff;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.icones img {
+
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    margin-left: 30px;
+    
+
+}
+
+.icones:hover img {
+
+    cursor: pointer;
+    background-color: hsl(300, 69%, 71%);
+    border-radius: 13px;
+    transition: 0;
+
+}
+
+
+
+
+@media screen and (max-width: 1100px) {
+
+    .geral {
+
+        min-width: 40%;
+        display: inline-block;
+        align-items: center;
+
+
+    }
+
+    .conteudo {
+        text-align: center;
+    }
+
+    .imagem img {
+        width: 30%;
+        min-width: 20vh;
+
+    }
+
+    .foto img {
+        width: 100%;
+        align-items: center;
+
+    }
+
+    .botao {
+        width: 100%;
+        max-width: 30vh;
+
+    }
+
+    .icones:hover {
+
+        cursor: pointer;
+        background-color: hsl(300, 69%, 71%);
+
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+    body {
+        background-image: url(./images/bg-mobile.svg);
+        margin: 30px 10px 10px 10px;
+
+    }
+
+    .foto img {
+        width: 100%;
+
+    }
+
+    .imagem img {
+        width: 20%;
+        margin-top: 0;
+        margin-bottom: 2em;
+
+    }
+
+    .conteudo h1 {
+
+        font-size: clamp(1.5rem, 1.5vw, 1.3rem);
+        text-align: center;
+        margin-left: 0;
+    }
+
+    p {
+        font-size: clamp(1rem, 1.25vw, 1.3rem);
+        text-align: center;
+        margin-left: 0;
+        flex-direction: column;
+    }
+
+    .botao {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        font-size: clamp(1rem, 1.25vw, 1.3rem);
+    }
+
+    .icones:hover {
+
+        cursor: pointer;
+        background-color: hsl(300, 69%, 71%);
+
+
+
+
+    }
+
+
+    footer p {
+        font-size: 10px;
+        margin-left: 30px;
+
+    }
+}
